@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik+Pixels&display=swap');
 
 img {
   max-width: 100%;
+}
+*{
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul,
@@ -11,7 +14,7 @@ li {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: hsl(217, 28%, 15%);
 }
 
@@ -23,7 +26,7 @@ h5,
 h6,
 .cta,
 .list-item {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
 }
 
 p {
@@ -47,4 +50,16 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.head{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size:1.7rem;
+  font-weight: bolder;
+}
+
+#synapse{
+  font-size: 3.5rem;
+  font-family: 'Rubik Pixels', sans-serif;
 }
