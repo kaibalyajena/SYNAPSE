@@ -11,7 +11,7 @@
     <div class="container">
         <header>Registration</header>
 
-        <form action="" id="registration_form">
+        <form action="" id="codequest">
             <div class="alert">Your registration has been completed</div>
             <div class="form first">
                 <div class="Team leader details">
@@ -23,19 +23,16 @@
                             <input type="text" placeholder="Enter your name" required id="teamName">
                         </div>
                         <div class="input-field">
-                            <label>Full Name</label>
+                            <label>Full Name (1)</label>
                             <input type="text" placeholder="Enter your name" required id="leaderName">
                         </div>
 
                         <div class="input-field">
-                            <label>Enrollment number</label>
+                            <label>Enrollment number (1)</label>
                             <input type="text" placeholder="Enter enrollment number" required id="leaderEnrollment">
                         </div>
 
-                        <div class="input-field">
-                            <label>Email</label>
-                            <input type="email" placeholder="Enter your email" required id="leaderEmail">
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -43,33 +40,16 @@
                     <span class="title">Team Member Details</span>
                     <div class="fields">
                         <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required id="member1Name">
+                            <label>Full Name (2)</label>
+                            <input type="text" placeholder="member 2 name" required id="member1Name">
                         </div>
 
                         <div class="input-field">
-                            <label>Enrollment number</label>
-                            <input type="text" placeholder="Enter enrollment number" required id="member1Enrollment">
+                            <label>Enrollment number (2)</label>
+                            <input type="text" placeholder="member 2 enrollment no." required id="member1Enrollment">
                         </div>
+
                         
-                            <div class="input-field">
-                                <label>Email</label>
-                                <input type="email" placeholder="Enter your email" required id="member1Email">
-                            </div>
-                        <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name"  id="member2Name">
-                        </div>
-
-                        <div class="input-field">
-                            <label>Enrollment number</label>
-                            <input type="text" placeholder="Enter enrollment number" id="member2Enrollment">
-                        </div>
-
-                        <div class="input-field">
-                            <label>Email</label>
-                            <input type="email" placeholder="Enter your email" id="member2Email">
-                        </div>
                     </div>
                     <button class="submitBtn" type="submit">
                         <span class="btnText">Submit</span>
@@ -78,5 +58,7 @@
             </div>
         </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="app2.js"></script>
 </body>
 </html>

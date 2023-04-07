@@ -1,11 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyD7ChT02-zd9BDWzFqdWE7YjxYRmXbW2ic",
-    authDomain: "ieee-registration-a982b.firebaseapp.com",
-    databaseURL: "https://ieee-registration-a982b-default-rtdb.firebaseio.com",
-    projectId: "ieee-registration-a982b",
-    storageBucket: "ieee-registration-a982b.appspot.com",
-    messagingSenderId: "571812745604",
-    appId: "1:571812745604:web:f418d76c05ff76ebc84dd1"
+    apiKey: "AIzaSyD83AsDXJ6zDS3aY898jgF2kjVrNZNj5bs",
+    authDomain: "synapse-c59b8.firebaseapp.com",
+    databaseURL: "https://synapse-c59b8-default-rtdb.firebaseio.com",
+    projectId: "synapse-c59b8",
+    storageBucket: "synapse-c59b8.appspot.com",
+    messagingSenderId: "197823434219",
+    appId: "1:197823434219:web:01b9972398ba1c87731dae"
   };
 
 //initialize firebase
@@ -17,21 +17,12 @@ document.getElementById("registration_form").addEventListener("submit",submitFor
 
 function submitForm(e){
     e.preventDefault();
-
-    var teamName=getElementVal('teamName');
     var leaderName=getElementVal('leaderName');
     var leaderEnrollment=getElementVal('leaderEnrollment');
-    var leaderEmail=getElementVal('leaderEmail');
-    var member1Name=getElementVal('member1Name');
-    var member1Enrollment=getElementVal('member1Enrollment');
-    var member1Email=getElementVal('member1Email');
-    var member2Name=getElementVal('member2Name');
-    var member2Enrollment=getElementVal('member2Enrollment');
-    var member2Email=getElementVal('member2Email');
     
-    // console.log(teamName,leaderName,leaderEnrollment,leaderEmail,member1Name,member1Enrollment,member1Email,member2Name,member2Enrollment,member2Email);
+    //console.log(leaderName,leaderEnrollment);
 
-    saveMessages(teamName,leaderName,leaderEnrollment,leaderEmail,member1Name,member1Enrollment,member1Email,member2Name,member2Enrollment,member2Email);
+    saveMessages(leaderName,leaderEnrollment);
 
     //enable the alert message
     document.querySelector('.alert').style.display='block';
@@ -46,22 +37,18 @@ function submitForm(e){
 }
 
 //save message to firebase
-const saveMessages=(teamName,leaderName,leaderEnrollment,leaderEmail,member1Name,member1Enrollment,member1Email,member2Name,member2Enrollment,member2Email)=>{
+const saveMessages=(leaderName,leaderEnrollment)=>{
     var new_registration_form=registration_formDB.push();
     new_registration_form.set({
-        teamName:teamName,
         leaderName:leaderName,
         leaderEnrollment:leaderEnrollment,
-        leaderEmail:leaderEmail,
-        member1Name:member1Name,
-        member1Enrollment:member1Enrollment,
-        member1Email:member1Email,
-        member2Name:member2Name,
-        member2Enrollment:member2Enrollment,
-        member2Email:member2Email
     });
 };
 
 const getElementVal=(id)=>{
     return document.getElementById(id).value;
 };
+
+
+
+
