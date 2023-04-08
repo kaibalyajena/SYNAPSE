@@ -35,6 +35,13 @@ function submitForm(e){
     setTimeout(()=>{
         document.querySelector('.alert').style.display='none';
     },100000);
+    //enable the alert message
+    document.querySelector('.alert2').style.display='block';
+
+    //remove the alert
+    setTimeout(()=>{
+        document.querySelector('.alert2').style.display='none';
+    },100000)
 
     //reset the form
     document.getElementById("codequest").reset();

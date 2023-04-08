@@ -129,6 +129,18 @@ form .fields .input-field{
     display: none;
 }
 
+
+.alert2{
+    width: 100%;
+    background-color: aquamarine;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    display: none;
+}
+
 @media (max-width: 750px) {
     .container form{
         overflow-y: scroll;

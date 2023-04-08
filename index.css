@@ -177,11 +177,21 @@ form .fields .input-field{
 .alert{
   width: 100%;
   background-color: aquamarine;
-  padding: 50px 60px;
+  padding: 20px 30px;
   border-radius: 8px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
+  display: none;
+}
+.alert2{
+  width: 100%;
+  background-color: aquamarine;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
   display: none;
 }
 
