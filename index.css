@@ -194,6 +194,28 @@ form .fields .input-field{
   font-weight: 800;
   display: none;
 }
+.event-img{
+  height: 60vh;
+  width: 60vw;
+}
+
+.event1-img{
+  height: 50vh;
+  width: 50vw;
+}
+.event2-img{
+  height: 50vh;
+  width: 50vw;
+}
+.event3-img{
+  height: 50vh;
+  width: 50vw;
+}
+
+.event-top{
+  height: 10vh;
+  width: 10vw;
+}
 
 @media (max-width: 750px) {
   .container form{
@@ -207,8 +229,37 @@ form .fields .input-field{
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   form .fields .input-field{
       width: 100%;
   }
+  .event-img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 30vh;
+    width: 95vw;
+  }
+  .event1-img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 20vh;
+    width: 95vw;
+  }
+  .event2-img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 25vh;
+    width: 95vw;
+  }
+  .event3-img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 25vh;
+    width: 95vw;
+  }
+  .event-top{
+    height: 10vh;
+    width: 30vw;
+  }
 }
+
