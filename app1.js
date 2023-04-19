@@ -70,13 +70,4 @@ const saveMessages=(teamName,leaderName,leaderEnrollment,member1Name,member1Enro
 const getElementVal=(id)=>{
     return document.getElementById(id).value;
 };
-
-
-
-
-
-
-
-
-
-
+//just today
