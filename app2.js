@@ -12,6 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 //reference your database
+
 var codequestDB=firebase.database().ref('codequest');
 document.getElementById("codequest").addEventListener("submit",submitForm);
 
